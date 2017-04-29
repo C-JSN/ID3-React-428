@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Main.css';
+import Editor from './Center/TextEditor'
 
 export default class Main extends Component {
   render() {
@@ -13,9 +14,7 @@ export default class Main extends Component {
             Data Management</p>
         </div>
         <div className={styles.center} data-tid="center-panel" >
-          <p>this panel contains<br/>
-            Live Render<br/>
-            Editor</p>
+          <Editor />
         </div>
         <div className={styles.right} data-tid="right-panel" >
           <p>this panel contains<br/>
